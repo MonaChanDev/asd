@@ -8,6 +8,9 @@
       let response = fetch('https://vecchiochan.com/b/catalog.json', {
   method: 'GET',
   headers: {
+    'Access-Control-Allow-Origin': 'https://vecchiochan.com',
+        'Access-Control-Allow-Methods': 'GET,HEAD,POST,OPTIONS',
+        'Access-Control-Max-Age': '86400',
     'Content-Type': 'application/json',
     'API-Key': 'secret'
   }
